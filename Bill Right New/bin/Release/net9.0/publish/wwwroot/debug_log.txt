@@ -1,0 +1,22 @@
+=== DEBUG LOG ===
+Time: 3/31/2025 2:01:57 PM
+Checking invoice file
+File received: Sample Invoice.png, Size: 8468 bytes
+Content type: image/png
+WebRootPath: C:\Bill Right New\wwwroot
+Trying to save to: C:\Bill Right New\wwwroot\uploads\debug_20250331_140157_.png
+Direct file save successful
+Starting invoice processing
+CAUGHT ERROR in invoice processing: Response status code does not indicate success: 400 (Bad Request).
+Stack trace:    at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Bill_Right_New.Services.SupabaseService.SaveInvoiceAsync(Invoice invoice) in C:\Bill Right New\Services\SupabaseService.cs:line 74
+   at Bill_Right_New.Services.InvoiceProcessingService.ProcessInvoiceAsync(IFormFile file) in C:\Bill Right New\Services\InvoiceProcessingService.cs:line 82
+   at Bill_Right_New.Pages.Invoice.UploadModel.OnPostAsync(IFormFile invoiceFile) in C:\Bill Right New\Pages\Invoice\Upload.cshtml.cs:line 98
+UNHANDLED EXCEPTION: Response status code does not indicate success: 400 (Bad Request).
+Exception type: System.Net.Http.HttpRequestException
+Stack trace:    at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Bill_Right_New.Services.SupabaseService.SaveInvoiceAsync(Invoice invoice) in C:\Bill Right New\Services\SupabaseService.cs:line 74
+   at Bill_Right_New.Services.InvoiceProcessingService.ProcessInvoiceAsync(IFormFile file) in C:\Bill Right New\Services\InvoiceProcessingService.cs:line 82
+   at Bill_Right_New.Pages.Invoice.UploadModel.OnPostAsync(IFormFile invoiceFile) in C:\Bill Right New\Pages\Invoice\Upload.cshtml.cs:line 98
+
+

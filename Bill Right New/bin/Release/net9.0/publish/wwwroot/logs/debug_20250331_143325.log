@@ -1,0 +1,10 @@
+=== DEBUG LOG ===
+Time: 3/31/2025 2:33:25 PM
+Checking invoice file
+File received: Sample Invoice.png, Size: 8468 bytes
+Content type: image/png
+WebRootPath: C:\Bill Right New\wwwroot
+Trying to save to: C:\Bill Right New\wwwroot\uploads\debug_20250331_143325_.png
+Direct file save successful
+Starting invoice processing
+Invoice processed successfully. ID: 1f99c093-cad7-4aa4-8309-32141c75e567

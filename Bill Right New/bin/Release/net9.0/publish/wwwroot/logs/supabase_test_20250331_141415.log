@@ -1,0 +1,6 @@
+=== SUPABASE TEST LOG ===
+Time: 3/31/2025 2:14:15 PM
+Test FAILED with exception: Response status code does not indicate success: 400 (Bad Request).
+Stack trace:    at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Bill_Right_New.Services.SupabaseService.SaveInvoiceAsync(Invoice invoice) in C:\Bill Right New\Services\SupabaseService.cs:line 103
+   at Bill_Right_New.Services.InvoiceProcessingService.TestSupabaseServiceAsync() in C:\Bill Right New\Services\InvoiceProcessingService.cs:line 233

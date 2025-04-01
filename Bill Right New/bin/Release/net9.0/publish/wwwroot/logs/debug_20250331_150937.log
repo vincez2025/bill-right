@@ -1,0 +1,13 @@
+=== DEBUG LOG ===
+Time: 3/31/2025 3:09:37 PM
+Checking invoice file
+File received: Sample Invoice.png, Size: 8468 bytes
+Content type: image/png
+Saving debug file to: C:\Bill Right New\wwwroot\uploads\debug_20250331_150937.png
+Direct file save successful
+Starting invoice processing
+CAUGHT ERROR in invoice processing: Response status code does not indicate success: 400 (Bad Request).
+Stack trace:    at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Bill_Right_New.Services.AzureOcrService.ExtractTextFromImageAsync(String imageUrl) in C:\Bill Right New\Services\AzureOcrService.cs:line 102
+   at Bill_Right_New.Services.InvoiceProcessingService.ProcessInvoiceAsync(IFormFile file) in C:\Bill Right New\Services\InvoiceProcessingService.cs:line 59
+   at Bill_Right_New.Pages.Invoice.UploadModel.OnPostAsync(IFormFile invoiceFile) in C:\Bill Right New\Pages\Invoice\Upload.cshtml.cs:line 95

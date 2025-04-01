@@ -1,0 +1,27 @@
+=== SYSTEM DIAGNOSTICS TEST ===
+Time: 3/31/2025 2:19:44 PM
+
+*** AZURE OCR SERVICE TEST ***
+Creating test image URL...
+Testing OCR with image: https://raw.githubusercontent.com/Azure-Samples/cognitive-services-REST-api-samples/master/curl/form-recognizer/sample-invoice.pdf
+TEST SUCCESS: Extracted 804 characters
+Text sample: CONTOSO LTD.
+INVOICE
+Contoso Headquarters
+123 456th St
+New York, NY, 10001
+INVOICE: INV-100
+DA...
+
+*** OPENAI SERVICE TEST ***
+Testing OpenAI with simple prompt...
+TEST SUCCESS: Extracted invoice data from OpenAI
+Invoice: #, Vendor: , Total: 0 USD
+
+*** SUPABASE SERVICE TEST ***
+Test FAILED with exception: Response status code does not indicate success: 400 (Bad Request).
+Stack trace:    at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Bill_Right_New.Services.SupabaseService.SaveInvoiceAsync(Invoice invoice) in C:\Bill Right New\Services\SupabaseService.cs:line 124
+   at Bill_Right_New.Services.InvoiceProcessingService.TestSupabaseServiceAsync() in C:\Bill Right New\Services\InvoiceProcessingService.cs:line 233
+
+=== END OF DIAGNOSTICS TEST ===

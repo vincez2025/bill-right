@@ -1,0 +1,12 @@
+{
+  "criticalFields": [
+    {
+      "name": "company_name",
+      "description": "The vendor or company name on the invoice"
+    },
+    {
+      "name": "total_amount",
+      "description": "The total amount due on the invoice"
+    }
+  ]
+} 

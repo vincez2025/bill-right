@@ -1,0 +1,9 @@
+=== DEBUG LOG ===
+Time: 3/31/2025 3:23:06 PM
+Checking invoice file
+File received: beatup_handwritten_invoice_full.pdf, Size: 123730 bytes
+Content type: application/pdf
+Saving debug file to: C:\Bill Right New\wwwroot\uploads\debug_20250331_152306.pdf
+Direct file save successful
+Starting invoice processing
+Invoice processed successfully. ID: 2e0c6faf-4881-4f7d-b265-fe9b54c49e0c

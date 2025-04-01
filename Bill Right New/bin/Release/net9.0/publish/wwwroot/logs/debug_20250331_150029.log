@@ -1,0 +1,9 @@
+=== DEBUG LOG ===
+Time: 3/31/2025 3:00:29 PM
+Checking invoice file
+File received: sample 3.jpg, Size: 45215 bytes
+Content type: image/jpeg
+Saving debug file to: C:\Bill Right New\wwwroot\uploads\debug_20250331_150030.jpg
+Direct file save successful
+Starting invoice processing
+Invoice processed successfully. ID: ccbed4fc-736a-4e88-b1e1-54d72461ad34

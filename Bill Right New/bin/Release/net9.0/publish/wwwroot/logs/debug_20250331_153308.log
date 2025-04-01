@@ -1,0 +1,13 @@
+=== DEBUG LOG ===
+Time: 3/31/2025 3:33:08 PM
+Checking invoice file
+File received: Sample Invoice.png, Size: 8468 bytes
+Content type: image/png
+Saving debug file to: C:\Bill Right New\wwwroot\uploads\debug_20250331_153308.png
+Direct file save successful
+Starting invoice processing
+CAUGHT ERROR in invoice processing: Azure OCR Endpoint is not configured. Please set this in your environment variables or configuration.
+Stack trace:    at Bill_Right_New.Services.SecretsManager.GetAzureOcrEndpoint() in C:\Bill Right New\Services\SecretsManager.cs:line 55
+   at Bill_Right_New.Services.AzureOcrService.ExtractTextFromImageAsync(String imageUrl) in C:\Bill Right New\Services\AzureOcrService.cs:line 32
+   at Bill_Right_New.Services.InvoiceProcessingService.ProcessInvoiceAsync(IFormFile file) in C:\Bill Right New\Services\InvoiceProcessingService.cs:line 67
+   at Bill_Right_New.Pages.Invoice.UploadModel.OnPostAsync(IFormFile invoiceFile) in C:\Bill Right New\Pages\Invoice\Upload.cshtml.cs:line 95
